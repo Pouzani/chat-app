@@ -1,18 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     fontFamily: {
-      'sans': ['Lato', 'sans serif'],
+      sans: ["Lato", "sans serif"],
     },
     extend: {
       colors: {
-      msgGray : '#262626',
-      }
+        msgGray: "#262626",
+        msgLight: "#EFEFEF",
+      },
     },
   },
   plugins: [],
-}
+};

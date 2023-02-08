@@ -17,7 +17,7 @@ export const ChatRoom = (props : prop) => {
   const [messages] = useCollectionData(q);
   return (
     <>
-      <div className='bg-black w-full md:w-3/5 h-full flex flex-col flex-col-reverse overflow-auto overflow-x-hidden rounded-3xl'>
+      <div className='dark:bg-black bg-white w-full md:w-3/5 h-full flex flex-col flex-col-reverse overflow-auto overflow-x-hidden rounded-3xl'>
         <MessageInput auth={props.auth} messageRef = {messageRef}  />
         {messages && messages.map( (msg,id) => <ChatMessage key={id} message = {msg} auth={props.auth}  /> )}
       </div>

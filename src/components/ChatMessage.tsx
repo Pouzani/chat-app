@@ -14,7 +14,7 @@ const ChatMessage = (props: prop) => {
 
   return (
     <div
-      className={`messages ${messageClass} font-bold w-full m-0 p-0 px-3 text-white flex`}
+      className={`messages ${messageClass} font-bold w-full m-0 p-0 px-3 dark:text-white text-black flex`}
     >
       <div className='flex message gap-1'>
         <img src={photoURL} className='rounded-full w-12 h-12'></img>

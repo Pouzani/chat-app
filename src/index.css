@@ -20,7 +20,7 @@
   }
 
   .sent>.message>div>.textmsg{
-    @apply  bg-msgGray w-max p-3 px-5 font-normal rounded-3xl
+    @apply  dark:bg-msgGray bg-msgLight w-max p-3 px-5 font-normal rounded-3xl
   }
 
   .recieved{
@@ -36,17 +36,14 @@
   }
 
   .recieved>.message>div>.textmsg{
-    @apply  bg-black border border-opacity-50 border-white w-max p-3 px-5 font-normal rounded-3xl
+    @apply  dark:bg-black border border-opacity-50 dark:border-white border-black bg-white w-max p-3 px-5 font-normal rounded-3xl
+  }
+
+  body{
+    @apply dark:bg-[#18181b] bg-gray-200 flex flex-col justify-center items-center
   }
 }
 
-body{
-  background-color:#18181b ;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 ::-webkit-scrollbar {
   width: 5px;
 

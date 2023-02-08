@@ -33,11 +33,11 @@ const auth = getAuth(app);
 const firestore = getFirestore(app);
 function App() {
   const [user] = useAuthState(auth);
-
+  const dark = 'dark';
   return (
     <div className='App'>
       <header>
-        <h1 className='text-white font-black text-3xl m-4'>
+        <h1 className='text-black dark:text-white font-black text-3xl m-4'>
         Lgroup (حلاق الرحمة) emergency chat
         </h1>
       </header>

@@ -35,7 +35,7 @@ export const MessageInput = (props: prop) => {
         <input
           type='search'
           id='search'
-          className='block w-full p-4 pl-10 focus:outline-none text-white border border-gray-600 rounded-full bg-black'
+          className='block w-full p-4 pl-10 focus:outline-none dark:text-white text-black border border-gray-600 rounded-full dark:bg-black bg-white'
           placeholder='Search'
           value={getFormValue}
           onChange={(e) => setFormValue(e.target.value)}
@@ -43,7 +43,7 @@ export const MessageInput = (props: prop) => {
         />
         <button
           type='submit'
-          className='text-white absolute right-2.5 bottom-2.5 text-xl  focus:outline-none rounded-lg px-4 py-2'
+          className='dark:text-white text-black absolute right-2.5 bottom-2.5 text-xl  focus:outline-none rounded-lg px-4 py-2'
         >
           <IoMdSend />
         </button>
