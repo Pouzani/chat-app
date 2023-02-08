@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .messages{
+    @apply w-auto m-2 p-3 rounded
+  }
+
+  .sent{
+    @apply justify-end
+  }
+
+  .sent>.message{
+    @apply p-4 flex flex-row-reverse
+  }
+
+  .sent>.message>div{
+    @apply flex flex-col items-end gap-3
+  }
+
+  .sent>.message>div>.textmsg{
+    @apply  bg-msgGray w-max p-3 px-5 font-normal rounded-3xl
+  }
+
+  .recieved{
+    @apply justify-start
+  }
+
+  .recieved>.message{
+    @apply p-4 flex
+  }
+
+  .recieved>.message>div{
+    @apply flex flex-col items-start gap-3
+  }
+
+  .recieved>.message>div>.textmsg{
+    @apply  bg-black border border-opacity-50 border-white w-max p-3 px-5 font-normal rounded-3xl
+  }
+}
+
+body{
+  background-color:#18181b ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+::-webkit-scrollbar {
+  width: 5px;
+
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(79, 79, 79);
+  border-radius: 10px;
+}
