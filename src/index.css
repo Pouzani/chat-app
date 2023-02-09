@@ -20,7 +20,7 @@
   }
 
   .sent>.message>div>.textmsg{
-    @apply  dark:bg-msgGray bg-msgLight w-max p-3 px-5 font-normal rounded-3xl
+    @apply  dark:bg-msgGray bg-msgLight w-auto max-w-[15rem] break-words p-3 text-left px-5 font-normal rounded-3xl
   }
 
   .recieved{
@@ -36,7 +36,7 @@
   }
 
   .recieved>.message>div>.textmsg{
-    @apply  dark:bg-black border border-opacity-50 dark:border-white border-black bg-white w-max p-3 px-5 font-normal rounded-3xl
+    @apply  dark:bg-black border border-opacity-50 dark:border-white border-black bg-white w-auto max-w-[15rem] p-3 px-5 font-normal rounded-3xl break-words
   }
 
   body{
