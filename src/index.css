@@ -36,7 +36,7 @@
   }
 
   .recieved>.message>div>.textmsg{
-    @apply  dark:bg-black border border-opacity-50 dark:border-white border-black bg-white w-auto max-w-[15rem] p-3 px-5 font-normal rounded-3xl break-words
+    @apply  dark:bg-black border border-opacity-50 dark:border-white border-black bg-white w-auto max-w-[15rem] p-3 px-5 font-normal rounded-3xl break-words text-left
   }
 
   body{
